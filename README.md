@@ -34,5 +34,4 @@ Aqui estão alguns dos projetos incluídos neste portfólio:
 
 - LinkedIn: [edson-kelvin](https://www.linkedin.com/in/edson-kelvin)
 - WhatsApp: [+5585989098591](https://wa.me/5585989098591)
-- GitHub: [edsonkelvindev](https://github.com/edsonkelvindev)
 - Instagram: [edskelvin](https://www.instagram.com/edskelvin/)
