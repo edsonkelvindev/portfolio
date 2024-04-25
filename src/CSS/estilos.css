@@ -191,6 +191,11 @@ body{
     align-items: center;
 }
 
+.lista-skills li .logo-github {
+    background-color: #fff;
+    border-radius: 50%;
+}
+
 .formacao .titulo {
     text-align: center;
     padding: 60px 0;

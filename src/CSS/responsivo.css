@@ -29,19 +29,21 @@
 @media(max-width: 680px) {
 
     .cabecalho .lista-menu {
-        gap: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
     }
 
     .cabecalho .menu li a{
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100%;
-        width: 135px;
-        font-size: 17px;
-        padding: 4px 5px; 
+        width: 130px;
+        font-size: 15px;
+        padding: 5px 10px; 
         border-radius: 50px;
-        background-color: rgba(78, 83, 93, 0.392);
+        background-color: rgba(104, 107, 113, 0.392);
     }
 
     .cabecalho .menu li a:hover{
@@ -82,6 +84,7 @@
     .btn-menu:hover{
         color: #235087;
         border: 2px solid #235087;
+        transition: 0.2s;
     }
 
     .menu-hamburger{
