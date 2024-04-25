@@ -37,6 +37,12 @@ body{
     border: 2px solid #235087;
 }
 
+.cabecalho .menu ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .cabecalho .menu li a{
     font-size: 22px;
     text-transform: capitalize;
@@ -50,11 +56,15 @@ body{
     border-radius: 50px;
 }
 
+.btn-menu{
+    display: none;
+}
+
 .home{
     display: flex;
     min-height: calc(100vh - 120px);
     align-items: center;
-    gap: 50px;
+    gap: 80px;
 }
 
 .home .informacoes{
@@ -95,6 +105,24 @@ body{
     transition: 0.3s;
 }
 
+.home .redes-sociais a .download-cv::before{
+    content: "Download CV";
+    letter-spacing: 0;
+}
+
+.home .redes-sociais a .download-cv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-style: normal;
+    width: 175px;
+    height: 50px;
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 50px;
+}
+
 .home .redes-sociais a i:hover{
     color: #235087;
     border: 1px solid #235087;
@@ -102,45 +130,112 @@ body{
 }
 
 .home .container-foto .foto{
-    min-width: 400px;
+    min-width: 450px;
     border-radius: 50%;
 }
 
 .home .container-foto img{
     width: 100%;
-    height: 400px;
+    height: 450px;
     border-radius: 50%;
 }
 
 .home .foto.sombra-interna{
-    background: linear-gradient(to right, #2a61a4, #18C063, #00EEA2);
+    background: linear-gradient(to right, #2a61a4, #80c16c, #eede00b1);
     background-size: 180% 180%;
     animation: gradient-animation 5s ease infinite;
 }
 
-.home .container-foto{
+.lista-menu a{
+    display: block;
+}
+
+.hard-skills .formacao .projetos {
+    padding: 40px 0 70px 0;
+}
+
+.hard-skills .titulo {
+    text-align: center;
+    padding: 60px 0;
+    font-size: 45px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.hard-skills .lista-skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin: 0px 10px 20px 10px;
+    padding: 10px 50px;
+    gap: 30px;
+}
+
+.lista-skills li span {
+    font-size: 20px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+}
+
+.lista-skills li img{
+    width: 160px;
+    height: 160px;
+}
+
+.lista-skills li {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 118px;
 }
 
-.container-foto .download-cv a{
-    font-size: 20px;
+.formacao .titulo {
+    text-align: center;
+    padding: 60px 0;
+    font-size: 45px;
     font-weight: 500;
-    border: 1px solid #fff;
+    text-transform: uppercase;
+}
+
+.formacao {
+    min-height: 100vh;
+}
+
+.formacao .formacao-academica {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 0;
+}
+
+.formacao-academica {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 15px;
+}
+
+.formacao .formacao-academica img {
+    width: 250px;
+    height: 250px;
+    padding: 0;
+    background-color: #fff;
     border-radius: 50px;
-    padding: 10px 20px;
-    transition: 0.2s;
 }
 
-.container-foto .download-cv a:hover{
-    background-color: #235087;
+.formacao .formacao-academica h3 {
+    font-size: 25px;
+    font-weight: 600;
 }
 
-.projetos{
-    padding: 40px 0 70px 0;
+.formacao .formacao-academica p {
+    font-size: 18px;
+    font-style: italic;
+    font-family: "Raleway", sans-serif;
 }
 
 .projetos .titulo{
@@ -175,7 +270,7 @@ body{
     height: 100%
 }
 
-.projetos .projeto h3{
+.projetos .projeto h4{
     background-color: #040203;
     width: 100%;
     padding: 10px 0 10px 20px;
@@ -221,6 +316,7 @@ body{
     font-size: 18px;
     font-weight: 600;
     margin: 0 auto;
+    margin-bottom: 30px;
     display: flex;
     justify-content: center;
     align-items: center;

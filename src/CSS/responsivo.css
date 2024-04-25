@@ -7,7 +7,7 @@
     .home {
         flex-direction: column;
         align-items: center;
-        margin: 50px 0;
+        margin: 30px 0;
         gap: 30px;
     }
 
@@ -21,8 +21,147 @@
         margin-top: 60px;
     }
 
-    .projetos .container-projetos {
+    .projetos .container-projetos{
         padding: 0 30px;
+    }
+}
+
+@media(max-width: 680px) {
+
+    .cabecalho .lista-menu {
+        gap: 10px;
+    }
+
+    .cabecalho .menu li a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        width: 135px;
+        font-size: 17px;
+        padding: 4px 5px; 
+        border-radius: 50px;
+        background-color: rgba(78, 83, 93, 0.392);
+    }
+
+    .cabecalho .menu li a:hover{
+        border: #235087;
+    }
+
+    .lista-menu{
+        position: absolute;
+        width: 100%;
+        top: 80px;
+        right: -0;
+        transition: 0.5s none;
+        z-index: 1000;
+        height: 0;
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .menu.active .lista-menu{
+        height: 80px;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .btn-menu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        width: 65px;
+        height: 65px;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .btn-menu:hover{
+        color: #235087;
+        border: 2px solid #235087;
+    }
+
+    .menu-hamburger{
+        width: 35px;
+        border-top: 3px solid;
+    }
+
+    .menu-hamburger::after, .menu-hamburger::before {
+        content: '';
+        display: block;
+        width: 35px;
+        height: 3px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: .2s;
+        position: relative;
+    }
+
+    .menu.active .menu-hamburger {
+        border-top-color: transparent;
+    }
+
+    .menu.active .menu-hamburger::before {
+        transform: rotate(135deg);
+    }
+
+    .menu.active .menu-hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+
+    .lista-menu li a{
+        padding: 8px;
+        margin-top: 8px;
+        display: flex;
+    }
+
+    .home .informacoes h1{
+        margin-top: 5px;
+    }
+
+    .home .informacoes p{
+        font-size: 20px;
+    }
+
+    .home .redes-sociais{
+        gap: 15px;
+    }
+
+    .home .redes-sociais a .download-cv::before{
+        display: none;
+    }
+
+    .home .redes-sociais a .download-cv::after{
+        content: "CV";
+        font-weight: 600;
+    }
+
+    .home .redes-sociais a .download-cv{
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    .home .container-foto .foto {
+        min-width: 380px;
+    }
+
+    .home .container-foto img {
+        height: 380px;
+    }
+
+    .formacao .formacao-academica h3 {
+        padding: 0 15px;
+    }
+
+    .formacao .formacao-academica p {
+        padding: 0 15px;
     }
 }
 
