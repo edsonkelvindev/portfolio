@@ -141,7 +141,8 @@ body{
 }
 
 .home .foto.sombra-interna{
-    background: linear-gradient(to right, #2a61a4, #80c16c, #eede00b1);
+    background: rgb(0,9,36);
+    background: linear-gradient(90deg, rgba(0,9,36,1) 0%, rgba(9,9,121,1) 50%, rgba(0,159,255,1) 80%);
     background-size: 180% 180%;
     animation: gradient-animation 5s ease infinite;
 }
@@ -169,7 +170,7 @@ body{
     align-items: center;
     max-width: 100%;
     margin: 0px 10px 20px 10px;
-    padding: 10px 50px;
+    padding: 30px 50px;
     gap: 30px;
 }
 
