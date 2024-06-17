@@ -106,7 +106,7 @@ body{
 }
 
 .home .redes-sociais a .download-cv::before{
-    content: "Download CV";
+    content: "Baixar CV";
     letter-spacing: 0;
 }
 
